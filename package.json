@@ -1,30 +1,21 @@
 {
-  "name": "package.json",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "stanthonyapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+        "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "build": "cd client && npm run build",
+        "render-build": "npm install && npm run build",
+        "seed": "cd server node seed/seed.js"
   },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@types/react": "^19.1.16",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.4",
-    "eslint": "^9.36.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.22",
-    "globals": "^16.4.0",
-    "vite": "npm:rolldown-vite@7.1.14"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.1.14"
-  }
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
