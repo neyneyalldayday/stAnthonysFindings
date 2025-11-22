@@ -1,10 +1,19 @@
+import DonationPage from "./components/DonationForm"
+
+
 
 function App() {
   
 
   return (
     <>
-      st anthonys findings
+    <div>
+     st anthonys findings
+    </div>
+    <section className="donation-section">     
+     <DonationPage/>
+    </section>
+     
     </>
   )
 }

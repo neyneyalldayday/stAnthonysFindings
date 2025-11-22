@@ -1,6 +1,7 @@
 // server.js
 const express = require('express');
 require('dotenv').config();
+const path = require('path')
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const sequelize = require('./config/connection.js');
 const Donation = require('./models/Donation.js');
@@ -11,7 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+// app.use(express.static(path.join(__dirname, '../client/dist')));
 
 
 app.post('/api/create-payment-intent', async (req, res) => {
@@ -64,6 +65,9 @@ app.post('/webhook', express.raw({type: 'application/json'}), async (req, res) =
   res.json({received: true});
 });
 
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+// });
 
 sequelize.sync({ alter: true })
   .then(() => {
