@@ -1,6 +1,6 @@
 export const donate = async (data) => {
     try {
-       const response = await fetch('/api/create-payment-intent' , {
+       const response = await fetch('api/donation/create-payment-intent' , {
         method: 'POST',        
         headers: {
             'Content-Type' : 'application/json',
@@ -8,8 +8,12 @@ export const donate = async (data) => {
         body: JSON.stringify(data),
        });
        
+       console.log('Response status:', response.status, response.statusText);
+
        if(!response.ok){
-        throw new Error('network response was not ok');
+       const errorText = await response.text();
+        console.error('Error response body:', errorText);
+        throw new Error(`HTTP ${response.status}: ${response.statusText}. ${errorText}`);
        }
 
        const responseData = await response.json();
