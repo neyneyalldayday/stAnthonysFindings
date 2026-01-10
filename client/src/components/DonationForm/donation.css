@@ -1,5 +1,5 @@
 .donation-form {
-    
+    color: #ed64ff;
     border-radius: 8px;
     padding: 1rem;
     max-width: 80%;
@@ -35,7 +35,7 @@
 
 .amount-section h3 {
   margin-bottom: 15px;
-  color: #333;
+  color: #ed64ff;
   font-size: 1.1rem;
 }
 
@@ -78,7 +78,7 @@
 
 .custom-amount-label {
   margin-bottom: 10px;
-  color: #666;
+  color: #ed64ff;
   font-size: 0.9rem;
 }
 

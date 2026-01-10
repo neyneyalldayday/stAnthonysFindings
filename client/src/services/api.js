@@ -38,8 +38,7 @@ export const totalDonations = async (data) => {
             throw new Error('network dysfunction');
         }
 
-        const  donationData = await response.json();
-        console.log(donationData)
+        const  donationData = await response.json();       
         if(donationData){
             return donationData;
         }
