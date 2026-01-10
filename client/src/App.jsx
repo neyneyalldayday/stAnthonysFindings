@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import DonationPage from "./components/DonationForm";
 import TotalDonations from "./components/totalDonations";
+import TopDonations from './components/TopDonations';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,6 +63,10 @@ Through these artworks, we hope to reconnect our community with the stories that
           </div>
         </div>
       </div>
+
+      <section>
+        <TopDonations />
+      </section>
       
       <section className="donation-section">  
         <TotalDonations />   
