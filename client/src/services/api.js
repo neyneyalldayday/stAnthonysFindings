@@ -24,3 +24,26 @@ export const donate = async (data) => {
       throw err;
     }
 }
+
+
+export const totalDonations = async (data) => {
+    try {
+        const response = await fetch('/api/records/donationTotal', {
+            method: 'GET',
+            credentials: 'include',
+            body: JSON.stringify(data),
+            headers: { 'Content-Type': 'application/json', }
+        });
+        if (!response.ok) {
+            throw new Error('network dysfunction');
+        }
+
+        const  donationData = await response.json();
+        console.log(donationData)
+        if(donationData){
+            return donationData;
+        }
+    } catch (err) {
+        console.error(err);
+    }
+}

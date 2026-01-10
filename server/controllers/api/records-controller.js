@@ -27,12 +27,13 @@ router.get('/donationTotal', async (req,res)  => {
             raw: true
         });
 
-        const total = parseFloat(result.totalAmount) || 0;
+        const totalCents = parseFloat(result.totalAmount) || 0;
+        const totalDollars = totalCents / 100
 
 
         res.status(200).json({
-            totalAmount : total,
-            formatedTotal:  `$${total.toFixed(2)}`
+            totalAmount : totalDollars,
+            formatedTotal:  `$${totalDollars.toFixed(2)}`
         });
     } catch (err) {
         console.error(err);

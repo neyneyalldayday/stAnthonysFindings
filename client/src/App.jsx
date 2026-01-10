@@ -1,4 +1,5 @@
 import DonationPage from "./components/DonationForm"
+import TotalDonations from "./components/totalDonations"
 
 
 
@@ -7,11 +8,12 @@ function App() {
 
   return (
     <>
-    <div>
+    <h1 className="title">
      st anthonys findings
-    </div>
-    <section className="donation-section">     
-     <DonationPage/>
+    </h1>
+    <section className="donation-section">  
+     <TotalDonations />   
+     <DonationPage />
     </section>
      
     </>
