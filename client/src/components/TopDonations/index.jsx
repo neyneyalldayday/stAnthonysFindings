@@ -69,7 +69,7 @@ const [isPaused, setIsPaused] = useState(false)
  useEffect(() => {
     fetchTopFive()
     
-    // Optional: Refresh data every 5 minutes
+   
     const refreshInterval = setInterval(fetchTopFive, 300000)
     
     return () => clearInterval(refreshInterval)
