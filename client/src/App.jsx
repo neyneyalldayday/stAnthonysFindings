@@ -30,7 +30,7 @@ Through these artworks, we hope to reconnect our community with the stories that
         <div className="about-content">
           <div className="about-left">
             <div className="icon-circle">🖼️</div>
-            <h3 className="about-subtitle">The Project</h3>
+            <h3 className="about-subtitle">The St Anthony Project</h3>
             <p>
               An art project spotlighting San Antonio's forgotten people and places through new works by local artists.
             </p>

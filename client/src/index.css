@@ -1,11 +1,22 @@
 :root {
+  
+   --color-deep-pink: #b7094c;
+  --color-magenta: #a01a58;
+  --color-plum: #892b64;
+  --color-purple-gray: #723c70;
+  --color-muted-purple: #5c4d7d;
+  --color-slate-purple: #455e89;
+  --color-ocean-blue: #2e6f95;
+  --color-teal-blue: #1780a1;
+  --color-cyan-teal: #0091ad;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-muted-purple);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,11 +24,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .donation-section{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   background-color: var(--color-muted-purple);
 }
 
 a {
@@ -30,6 +43,7 @@ a:hover {
 }
 
 body {
+  font-family: "Germania One", system-ui;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -96,12 +110,12 @@ button:focus-visible {
 }
 
 .title-accent {
-  color: #4cc9f0;
+  color: var(--color-cyan-teal);
 }
 
 .tagline {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--color-teal-blue);
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -113,7 +127,7 @@ button:focus-visible {
   grid-template-columns: 1fr auto 1fr;
   gap: 40px;
   align-items: center;
-  background: white;
+  background: rgb(230, 182, 241);
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -178,7 +192,7 @@ button:focus-visible {
 }
 
 .funding-amount.goal {
-  color: #4cc9f0;
+  color: var(--color-deep-pink);
 }
 
 .funding-label {
@@ -233,7 +247,7 @@ button:focus-visible {
   gap: 8px;
   margin-top: 20px;
   padding: 12px 24px;
-  background: linear-gradient(135deg, #4361ee, #4cc9f0);
+  background: linear-gradient(135deg, var(--color-slate-purple), var(--color-teal-blue));
   color: white;
   border: none;
   border-radius: 50px;
@@ -247,7 +261,7 @@ button:focus-visible {
 .learn-more-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(67, 97, 238, 0.3);
-  background: linear-gradient(135deg, #3a56d4, #3ab5e0);
+  background: linear-gradient(135deg, var(--color-purple-gray), var(--color-magenta));
 }
 
 .learn-more-btn:active {
