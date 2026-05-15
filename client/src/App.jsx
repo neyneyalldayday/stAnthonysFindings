@@ -3,6 +3,8 @@ import DonationPage from "./components/DonationForm";
 import TotalDonations from "./components/totalDonations";
 import TopDonations from './components/TopDonations';
 
+import StAnthonyImage from "./assets/IMG_0241.jpeg"
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,7 +31,7 @@ Through these artworks, we hope to reconnect our community with the stories that
         
         <div className="about-content">
           <div className="about-left">
-            <div className="icon-circle">🖼️</div>
+            <div className="icon-circle"><img src={StAnthonyImage} alt=""  id='stantimg'/></div>
             <h3 className="about-subtitle">The St Anthony Project</h3>
             <p>
               An art project spotlighting San Antonio's forgotten people and places through new works by local artists.
