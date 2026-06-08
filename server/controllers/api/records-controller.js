@@ -63,8 +63,8 @@ router.get('/topDonations', async (req, res) => {
 
         const formattedDonations = topDonations.map(donation => ({
             ...donation,
-            amount: parseFloat(donation.amount) || 0,
-            formattedAmount: `$${(parseFloat(donation.amount) || 0).toFixed(2)}`
+            amount: (parseFloat(donation.amount) || 0) / 100,
+            formattedAmount: `$${((parseFloat(donation.amount) || 0) / 100).toFixed(2)}`
         }));
 
 
