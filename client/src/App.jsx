@@ -32,7 +32,7 @@ Through these artworks, we hope to reconnect our community with the stories that
         <div className="about-content">
           <div className="about-left">
             <div className="icon-circle"><img src={StAnthonyImage} alt=""  id='stantimg'/></div>
-            <h3 className="about-subtitle">The St Anthony Project</h3>
+            <h3 className="about-subtitle">The St Anthony's Findings</h3>
             <p>
               St. Anthony's Findings is a place to explore unearthed local legends, places and iconography i San Antonio that make it unique and special
             </p>
