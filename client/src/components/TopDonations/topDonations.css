@@ -1,5 +1,5 @@
 .top-donations-container {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, var(--color-plum) 0%, var(--color-ocean-blue) 100%);
   border-radius: 20px;
   padding: 30px;
   color: white;
@@ -33,7 +33,7 @@
 .top-donations-header h2 {
   font-size: 2rem;
   margin: 0;
-  color: #4cc9f0;
+  color: var(--color-cyan-teal);
   text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
   font-weight: 700;
 }

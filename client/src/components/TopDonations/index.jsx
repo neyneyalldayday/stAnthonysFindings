@@ -24,9 +24,12 @@ const [isPaused, setIsPaused] = useState(false)
                        fetchedTop || 
                        []
       
+                
       
       const formattedDonations = donations.map(donation => ({
         ...donation,
+
+        
        
         amount: donation.amount > 1000 ? 
                 (donation.amount / 100).toFixed(2) : 

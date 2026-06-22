@@ -1,9 +1,9 @@
 .total-donations-container {
     padding: 2rem;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, var(--color-purple-gray) 0%, var(--color-slate-purple) 100%);
     border-radius: 12px;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -12,7 +12,7 @@
 .total-donations-title {
     text-align: center;
     margin-bottom: 2rem;
-    color: #00b4d8;
+    color: var(--color-cyan-teal);
     font-size: 2.5rem;
     text-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
     letter-spacing: 1px;

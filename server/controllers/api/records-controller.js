@@ -15,7 +15,7 @@ router.get("/donationInfo", async (req, res) => {
 })
 
 
-router.get('/donationTotal', async (req,res)  => {
+router.get('/donationTotal', async (req, res) => {
     try {
         const result = await Donation.findOne({
             attributes: [
@@ -27,17 +27,22 @@ router.get('/donationTotal', async (req,res)  => {
             raw: true
         });
 
-        const totalCents = parseFloat(result.totalAmount) || 0;
-        const totalDollars = totalCents / 100
-
+        // Check if we have a valid total
+        let totalDollars = 0;
+        
+        if (result && result.totalAmount !== null) {
+            const totalCents = parseFloat(result.totalAmount);
+            totalDollars = totalCents / 100;
+        }
 
         res.status(200).json({
-            totalAmount : totalDollars,
-            formatedTotal:  `$${totalDollars.toFixed(2)}`
+            totalAmount: totalDollars,
+            formattedTotal: `$${totalDollars.toFixed(2)}`
         });
+        
     } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'failed to calculate total donations' });
+        console.error('Error calculating donation total:', err);
+        res.status(500).json({ error: 'Failed to calculate total donations' });
     }
 });
 
@@ -63,8 +68,8 @@ router.get('/topDonations', async (req, res) => {
 
         const formattedDonations = topDonations.map(donation => ({
             ...donation,
-            amount: parseFloat(donation.amount) || 0,
-            formattedAmount: `$${(parseFloat(donation.amount) || 0).toFixed(2)}`
+            amount: (parseFloat(donation.amount) || 0) / 100,
+            formattedAmount: `$${((parseFloat(donation.amount) || 0) / 100).toFixed(2)}`
         }));
 
 

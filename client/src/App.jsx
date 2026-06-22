@@ -3,6 +3,8 @@ import DonationPage from "./components/DonationForm";
 import TotalDonations from "./components/totalDonations";
 import TopDonations from './components/TopDonations';
 
+import StAnthonyImage from "./assets/IMG_0241.jpeg"
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,8 +31,8 @@ Through these artworks, we hope to reconnect our community with the stories that
         
         <div className="about-content">
           <div className="about-left">
-            <div className="icon-circle">🖼️</div>
-            <h3 className="about-subtitle">The Project</h3>
+            <div className="icon-circle"><img src={StAnthonyImage} alt=""  id='stantimg'/></div>
+            <h3 className="about-subtitle">The St Anthony Project</h3>
             <p>
               St. Anthony's Findings is a place to explore unearthed local legends, places and iconography i San Antonio that make it unique and special
             </p>
