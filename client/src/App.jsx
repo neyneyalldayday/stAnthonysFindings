@@ -11,13 +11,16 @@ function App() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const extendedPitch = `St. Anthony's Findings is a new community art project from Clamp Light Studios that celebrates the "lost" people, places, and stories that shaped San Antonio.
+  const extendedPitch = `Welcome to St. Anthony’s Findings, a multidisciplinary art project highlighting unearthed local legends, natural landscapes and iconography of San Antonio. 
 
-Our artists are creating original works across many mediums — from sculpture and embroidery to painting, film, and music — each inspired by the spirit of St. Anthony, the patron saint of lost things.
+Artists Bridgette Ralph and Symone Harvey are recipients of the FY2026 Grant from the City of San Antonio Department of Arts & Culture. Together with local artists Brittany Drum, René Trevino, Laura Stevens, Monica Bosch, and Caterina Suttin they are bringing St. Anthony’s Findings to life.  
 
-The project aims to rediscover forgotten histories, honor overlooked voices, and highlight the beauty and resilience woven into the fabric of this city.
+This art project honors Rafael Gonzalez, Wayne Holtz, Patricia Frausto, Bhagavan Narada Das, and Naradi Lila Devi Dasi, the founders of The Bliss House. Each of the honorees has made significant contributions to the people and the city of San Antonio. 
 
-Through these artworks, we hope to reconnect our community with the stories that make San Antonio truly unique.`;
+Join us on Januray 9, 2027 at Little Pinky Gallery 144 Zapata Street San Antonio, Texas for our main exhibition for St. Anthony’s Findings. 
+
+Please follow @stanthonysfindings on Instagram to stay updated on our project and be in the know for any upcoming events we are hosting.
+`;
 
   return (
     <>
@@ -34,7 +37,7 @@ Through these artworks, we hope to reconnect our community with the stories that
             <div className="icon-circle"><img src={StAnthonyImage} alt=""  id='stantimg'/></div>
             <h3 className="about-subtitle">The St Anthony's Findings</h3>
             <p>
-              St. Anthony's Findings is a place to explore unearthed local legends, places and iconography i San Antonio that make it unique and special
+              St. Anthony's Findings is a place to explore unearthed local legends, places and iconography in San Antonio that make it unique and special
             </p>
             <button 
               className="learn-more-btn"
