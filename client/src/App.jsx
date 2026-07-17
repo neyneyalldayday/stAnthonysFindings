@@ -2,6 +2,8 @@ import { useState } from 'react';
 import DonationPage from "./components/DonationForm";
 import TotalDonations from "./components/totalDonations";
 import TopDonations from './components/TopDonations';
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 import StAnthonyImage from "./assets/IMG_0241.jpeg"
 
@@ -24,6 +26,7 @@ Please follow @stanthonysfindings on Instagram to stay updated on our project an
 
   return (
     <>
+    <Nav stAnt='stanthonysfindings' />
       <div className="about-container">
         <div className="about-header">
           <h1 className="title">
@@ -117,6 +120,7 @@ Please follow @stanthonysfindings on Instagram to stay updated on our project an
           </div>
         </div>
       )}
+      <Footer stAnt="stanthonysfindings"></Footer>
     </>
   );
 }

@@ -1,8 +1,13 @@
 import React from 'react'
+import { InstagramHandle } from '../InstagramHandle'
+import './nav.css'
+
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <div className='nav'>
+    <InstagramHandle  stAnt='stanthonysfindings'/>
+    </div>
   )
 }
 
