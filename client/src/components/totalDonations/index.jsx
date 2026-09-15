@@ -54,10 +54,11 @@ const TotalDonations = () => {
             
             
             if (fetchedTotal && typeof fetchedTotal === 'object') {
+
+              
                
-                const amount = fetchedTotal.formatedTotal || 
-                              fetchedTotal.total || 
-                              fetchedTotal.amount || 
+                const amount = fetchedTotal.formattedTotal || 
+                              fetchedTotal.totalAmount ||
                               0
                 
                 

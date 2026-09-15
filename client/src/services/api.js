@@ -30,8 +30,7 @@ export const totalDonations = async (data) => {
     try {
         const response = await fetch('/api/records/donationTotal', {
             method: 'GET',
-            credentials: 'include',
-            body: JSON.stringify(data),
+            credentials: 'include',            
             headers: { 'Content-Type': 'application/json', }
         });
         if (!response.ok) {
@@ -43,7 +42,8 @@ export const totalDonations = async (data) => {
             return donationData;
         }
     } catch (err) {
-        console.error(err);
+        console.error('totalDonations failed:', err);
+        throw err;
     }
 }
 
