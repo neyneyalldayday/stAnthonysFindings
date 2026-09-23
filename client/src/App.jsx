@@ -17,9 +17,9 @@ function App() {
 
 Artists Bridgette Ralph and Symone Harvey are recipients of the FY2026 Grant from the City of San Antonio Department of Arts & Culture. Together with local artists Brittany Drum, René Trevino, Laura Stevens, Monica Bosch, and Caterina Suttin they are bringing St. Anthony’s Findings to life.  
 
-This art project honors Rafael Gonzalez, Wayne Holtz, Patricia Frausto, Bhagavan Narada Das, Hana Buck, Rolando Almaraz and Naradi Lila Devi Dasi, the founders of The Bliss House. Each of the honorees has made significant contributions to the people and the city of San Antonio. 
+This art project honors Rafael Gonzalez, Wayne Holtz, Patricia Frausto, Hana Buck, Rolando Almaraz, Bhagavan Narada Das and Naradi Lila Devi Dasi, the founders of The Bliss House. Each of the honorees has made significant contributions to the people and the city of San Antonio. 
 
-Join us on Januray 9, 2027 at Little Pinky Gallery 144 Zapata Street San Antonio, Texas for our main exhibition for St. Anthony’s Findings. 
+Join us on January 9, 2027 at Little Pinky Gallery 144 Zapata Street San Antonio, Texas for our main exhibition for St. Anthony’s Findings. 
 
 Please follow @stanthonysfindings on Instagram to stay updated on our project and be in the know for any upcoming events we are hosting.
 `;
